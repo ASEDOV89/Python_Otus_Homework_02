@@ -12,13 +12,13 @@
 > Есть смысл переопределять методы только если вы меняете их поведение (добавляете новые аргументы, устанавливаете новые свойства).
 
 #### Задача:
-- скопируйте папку `homework_02` для этой домашки (Памятка: https://github.com/OtusTeam/BasePython/tree/homeworks-new)
-- в модуле `exceptions` объявите следующие исключения:
-    - `LowFuelError`
-    - `NotEnoughFuel`
-    - `CargoOverload`
+- ~~скопируйте папку `homework_02` для этой домашки (Памятка: https://github.com/OtusTeam/BasePython/tree/homeworks-new)~~
+- ~~в модуле `exceptions` объявите следующие исключения:~~
+    - ~~`LowFuelError`~~
+    - ~~`NotEnoughFuel`~~
+    - ~~`CargoOverload`~~
 - доработайте базовый класс `base.Vehicle`:
-    - добавьте атрибуты `weight`, `started`, `fuel`, `fuel_consumption` со значениями по умолчанию
+    - ~~добавьте атрибуты `weight`, `started`, `fuel`, `fuel_consumption` со значениями по умолчанию~~
     - добавьте инициализатор для установки `weight`, `fuel`, `fuel_consumption`
     - добавьте метод `start`. При вызове этого метода необходимо проверить состояние `started`. И если не `started`, то нужно проверить, что топлива больше нуля, 
       и обновить состояние `started`, иначе нужно выкинуть исключение `exceptions.LowFuelError`
