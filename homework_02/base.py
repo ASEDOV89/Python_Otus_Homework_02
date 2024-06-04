@@ -1,7 +1,6 @@
 from abc import ABC
 from homework_02.exceptions import LowFuelError, NotEnoughFuel
 
-
 class Vehicle(ABC):
     def __init__(self, weight=1500, started=False, fuel=150, fuel_consumption=5):
         self.weight = weight
@@ -22,6 +21,6 @@ class Vehicle(ABC):
             required_fuel = distance * self.fuel_consumption
             if required_fuel <= self.fuel:
                 self.fuel -= required_fuel
-                print(f"Машина проедет {distance} км")
+                print(f"Мы преодолеем {distance} км с тем топливом, что есть в баке")
             else:
-                raise NotEnoughFuel("Not enough fuel to cover the distance.")
+                raise NotEnoughFuel("Топлива не достаточно для преодоления указанной дистанции")
